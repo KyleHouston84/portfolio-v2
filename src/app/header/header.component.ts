@@ -4,9 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template: `
     <header class="header">
-      <nav>
+      <nav class="main-nav">
         <input type="checkbox" name="menuButton" id="menuButton">
-        <label for="menuButton">
+        <label for="menuButton" class="spinner-spin">
           <div class="spinner diagonal part-1"></div>
           <div class="spinner horizontal"></div>
           <div class="spinner diagonal part-2"></div>
