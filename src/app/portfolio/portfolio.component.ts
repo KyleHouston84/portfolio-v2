@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio',
+  selector: 'portfolio',
   template: `
     <section id="portfolio" class="work">
       <div class="works-container">

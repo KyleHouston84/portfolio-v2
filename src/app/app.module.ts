@@ -9,6 +9,10 @@ import { TitleComponent } from './title/title.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { TechComponent } from './tech/tech.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+
+// Vendor
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,10 +22,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     TitleComponent,
     AboutMeComponent,
     TechComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tech',
+  selector: 'tech',
   template: `
     <section id="skills" class="skills">
       <div class="techs-container">
