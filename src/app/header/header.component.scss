@@ -67,7 +67,7 @@
         display: block;
         width: 7px;
         height: 7px;
-        border: 2px solid #000;
+        border: 2px solid #313131;
         border-radius: 50%;
         position: absolute;
         right: 0;
@@ -156,7 +156,7 @@
   > .spinner {
     height:5px;
     width:50px;
-    background-color:#000;
+    background-color:#313131;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     &.diagonal.part-1 {
@@ -192,7 +192,7 @@
 .light {
   .main-nav {
     ul a::after {
-      border: 2px solid #000;
+      border: 2px solid #313131;
     }
   }
 }
