@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { TitleComponent } from './title/title.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { TechComponent } from './tech/tech.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TechComponent } from './tech/tech.component';
     HeaderComponent,
     TitleComponent,
     AboutMeComponent,
-    TechComponent
+    TechComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

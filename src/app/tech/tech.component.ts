@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <section id="skills" class="skills">
       <div class="techs-container">
         <h1 class="techs-h2">
-          &lt;Technologies I love working with <span class="slash">/</span>&gt;
+          &lt;technologies I love working with <span class="slash">/</span>&gt;
         </h1>
 
         <div class="filter-buttons">
