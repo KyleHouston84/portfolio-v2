@@ -4,6 +4,9 @@ section {
   overflow: hidden;
   box-sizing: border-box;
   padding: 0 10px;
+  &.sm {
+    max-height: 75vh;
+  }
 }
 
 a {

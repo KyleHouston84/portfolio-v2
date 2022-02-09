@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'about-me',
   template: `
-    <section id="about" class="about">
+    <section id="about" class="about sm">
       <h1 class="about-h1">&lt;about me <span class="slash">/</span>&gt;</h1>
       <article class="introduction">
         <div class="headshot"></div>
