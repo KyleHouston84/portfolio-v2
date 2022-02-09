@@ -13,6 +13,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 
 // Vendor
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AboutMeComponent,
     TechComponent,
     PortfolioComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
