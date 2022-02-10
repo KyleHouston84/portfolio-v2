@@ -15,15 +15,14 @@ import { Component, OnInit } from '@angular/core';
           </div>
 
           <p>
-            I excel in transforming a design into living web components and interactions. I fill the gaps between
-            the breakpoints and I design additional components following the look and feel of the original design.
-            I love working collaboratively with designers and other developers to make engaging and beautiful web applications.
+            The last {{experience}} years I have been creating web sites and developing intuitive, performant, and powerful enterprise 
+            web applications (as well as picking up some freelance work along the way). 
           </p>
 
-          <p class="mobile-optional">
-            After 3 years of studying electrical engineering, while I was working for a microchip manufaturer,
-            I took an abrupt turn toward web development by enrolling at Portland Code School. The last {{experience}} years I have been creating web sites and
-            developing intuitive, performant, and powerful enterprise web applications (as well as picking up some freelance work along the way). 
+          <p  class="mobile-optional">
+            I excel in transforming a design into living web components and interactions. I fill the gaps between
+            the breakpoints and design additional components following the look and feel of the original design.
+            I love working collaboratively with designers and other developers to make engaging and beautiful web applications.
           </p>
           <a class="button" href="https://drive.google.com/open?id=0ByNa4iGTcKzqWThTY0dZaU1xTFE" target="_blank">Download my resume</a>
         </div>
