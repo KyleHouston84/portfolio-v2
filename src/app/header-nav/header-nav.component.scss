@@ -1,8 +1,9 @@
 @import '../../styles/base/variables';
+
 .main-nav {
   position: fixed;
   top: 50%;
-  right: 12px;
+  right: 35px;
   transform: translateY(-50%);
   z-index: 1000;
   ul {
@@ -65,8 +66,8 @@
       &::after {
         content: '';
         display: block;
-        width: 7px;
-        height: 7px;
+        width: 10px;
+        height: 10px;
         border: 2px solid #313131;
         border-radius: 50%;
         position: absolute;
@@ -83,6 +84,7 @@
   }
   @media screen and (max-width: 718px) {
     top: 0;
+    right: 10px;
     transform: translateY(0);
     width: 50px;
   }
@@ -93,7 +95,7 @@
     height: 100vh;
     overflow: hidden;
     position: fixed;
-    padding-top: 33px;
+    margin-top: 46px;
     z-index: -1;
     right: 0;
     transform: translateX(120%);
@@ -119,9 +121,6 @@
         display: none;
       }
     }
-  }
-  .dark {
-
   }
 }
 
@@ -177,9 +176,7 @@
   }
 }
 
-
-
-.dark {
+.dark-section {
   .main-nav {
     ul a::after {
       border: 2px solid #fff;
@@ -189,7 +186,8 @@
     background-color: #fff;
   }
 }
-.light {
+
+.light-section {
   .main-nav {
     ul a::after {
       border: 2px solid #313131;

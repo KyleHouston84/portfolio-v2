@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-title',
   template: `
-    <section parallax-background parallax-ratio="0.2" id="intro" class="title">
+    <section id="intro" class="title">
       <a class="logo-link">
         <span class="logo"></span>
       </a>

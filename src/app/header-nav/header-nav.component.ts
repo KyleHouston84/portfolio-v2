@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
+  selector: 'header-nav',
   template: `
-    <header class="header">
+    <header class="header" [class]="sectionColorClass">
       <nav class="main-nav">
-        <input type="checkbox" name="menuButton" id="menuButton">
+        <input type="checkbox" name="menuButton" id="menuButton" [(ngModel)]="moblieNavVisible">
         <label for="menuButton" class="spinner-spin">
           <div class="spinner diagonal part-1"></div>
           <div class="spinner horizontal"></div>
@@ -21,16 +21,21 @@ import { Component, OnInit } from '@angular/core';
         </ul>
       </nav>
     </header>`,
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header-nav.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderNavComponent implements OnInit {
+  
+  @Input() sectionColorClass: string = 'dark-section';
+  @Output() scrollTo: EventEmitter<string> = new EventEmitter<string>();
+
+  moblieNavVisible: boolean = false;
 
   constructor() { }
 
   navTo(target: string): void {
     console.log("🚀 ~ file: header.component.ts ~ line 31 ~ HeaderComponent ~ navTo ~ target", target);
-    // document.querySelector('#' + target)
-		// .scrollIntoView();
+    this.scrollTo.emit(target);
+    this.moblieNavVisible = false;
   }
 
   ngOnInit(): void {

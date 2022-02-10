@@ -1,9 +1,14 @@
-<app-header></app-header>
-<main class="main">
-  <app-title></app-title>
-  <about-me></about-me>
-  <tech></tech>
-  <portfolio></portfolio>
-  <contact-me></contact-me>
-</main>
-<app-footer></app-footer>
+<div class="content-container" 
+  scrollSpy 
+  [spiedTags]="['APP-TITLE', 'ABOUT-ME', 'TECH', 'PORTFOLIO', 'CONTACT-ME']" 
+  (sectionChange)="onSectionChange($event)">
+  <header-nav [sectionColorClass]="sectionColorClass" (scrollTo)="scrollTo($event)"></header-nav>
+  <app-title id="intro"></app-title>
+  <about-me id="about"></about-me>
+  <tech id="skills"></tech>
+  <portfolio id="portfolio"></portfolio>
+  <contact-me id="contact"></contact-me>
+  <!-- <main class="main">
+  </main> -->
+  <app-footer></app-footer>
+</div>
