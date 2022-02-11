@@ -1,0 +1,36 @@
+section.work {
+  padding: 5em 1em 3em;
+  min-height: auto;
+}
+
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 1.5em;
+  margin: 0 auto;
+  max-width: 77.68em;
+}
+
+.preview-card {
+  background: #ccc;
+  width: 15em;
+  height: 15em;
+  margin: 0 0 3em;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  box-shadow: 0px 6px 10px rgba(0,0,0,0.13);
+  .title {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+    background: linear-gradient(0deg, #313131 -8%, transparent 100%);
+    color: #f9f9f9;
+    padding: 8em 0 1em;
+    margin: 0;
+  }
+}

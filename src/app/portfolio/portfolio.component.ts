@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import WORKS, { Work } from '../work-examples';
 
 @Component({
   selector: 'portfolio',
@@ -8,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
         <h2 class="section-title">
           &lt;sample of projects I've worked on <span class="slash">/</span>&gt;
         </h2>
-        <div class="works">
-          <!-- <portfolio-work class="portfolio-screen" ng-repeat="work in $ctrl.works" work="work"></portfolio-work> -->
+        <div class="works-container">
+          <ng-container *ngFor="let sample of workSamples">
+            <div class="preview-card" [ngStyle]="{'background-image': 'url('+ sample.screen +')'}">
+              <h3 class="title">{{ sample.title }}</h3>
+            </div>
+          </ng-container>
         </div>
       </div>
     </section>
@@ -18,7 +23,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  workSamples: Work[] = [];
+
+  constructor() {
+    this.workSamples = [...WORKS];
+  }
 
   ngOnInit(): void {
   }

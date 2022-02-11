@@ -1,11 +1,11 @@
 section {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   padding: 0 10px;
   &.sm {
-    max-height: 75vh;
+    min-height: 60vh;
   }
 }
 
