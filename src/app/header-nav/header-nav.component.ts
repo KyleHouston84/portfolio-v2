@@ -33,7 +33,6 @@ export class HeaderNavComponent implements OnInit {
   constructor() { }
 
   navTo(target: string): void {
-    console.log("🚀 ~ file: header.component.ts ~ line 31 ~ HeaderComponent ~ navTo ~ target", target);
     this.scrollTo.emit(target);
     this.moblieNavVisible = false;
   }
