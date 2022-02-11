@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import TECHNOLOGIES, { Tech } from '../technologies';
 
 @Component({
   selector: 'tech',
@@ -18,7 +19,20 @@ import { Component, OnInit } from '@angular/core';
         </div>
 
         <div class="techs">
-          <!-- <portfolio-tech ng-repeat="tech in $ctrl.techs | filter:currentView" tech="tech" class="card"></portfolio-tech> -->
+          <ng-container *ngFor="let tech of technologies">
+            <div class="card">
+              <div class="tech">
+                <div class="progress-bar" [ngStyle]="{'transform': 'rotate(' + ( 180 * (tech.level / 100) ) + 'deg)'}">
+                  <div class="progress-label" [ngStyle]="{'transform': 'rotate(-' + ( 180 * (tech.level / 100) ) + 'deg)'}">{{tech.level}}%</div>
+                </div>
+                <div class="progress-mask"></div>
+                <div class="tech-logo" [ngStyle]="{'background-image': 'url('+ tech.logoURL +')'}"></div>
+              </div>
+              <h3 class="tech-h3">
+                {{ tech.title }}
+              </h3>
+            </div>
+          </ng-container>
         </div>
       </div>
     </section>
@@ -28,12 +42,20 @@ import { Component, OnInit } from '@angular/core';
 export class TechComponent implements OnInit {
 
   currentView: string = 'all';
+  technologies: Tech[] = [];
 
-  constructor() { }
+  constructor() {
+    this.technologies = [...TECHNOLOGIES];
+  }
 
   filter(type: string): void {
-    console.log("🚀 ~ file: tech.component.ts ~ line 35 ~ TechComponent ~ filter ~ type", type)
+    console.log("🚀 ~ file: tech.component.ts ~ line 35 ~ TechComponent ~ filter ~ type", type);
     this.currentView = type;
+    if (type === 'all') {
+      this.technologies = [...TECHNOLOGIES];
+    } else {
+      this.technologies = TECHNOLOGIES.filter( (tech) => tech.type === type);
+    }
   }
 
   ngOnInit(): void {
