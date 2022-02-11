@@ -50,7 +50,6 @@ export class TechComponent implements OnInit {
   }
 
   filter(type: string): void {
-    console.log("🚀 ~ file: tech.component.ts ~ line 35 ~ TechComponent ~ filter ~ type", type);
     this.currentView = type;
     if (type === 'all') {
       this.technologies = [...TECHNOLOGIES];

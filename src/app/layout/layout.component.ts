@@ -25,11 +25,9 @@ export class LayoutComponent implements OnInit {
 	onSectionChange(sectionId: string) {
 		this.currentSection = sectionId;
     this.sectionColorClass = this.darkSections.includes(this.currentSection) ? 'dark-section' : 'light-section';
-    console.log("🚀 ~ file: layout.component.ts ~ line 21 ~ LayoutComponent ~ onSectionChange ~ this.currentSection", this.currentSection)
 	}
 
   scrollTo(target: string) {
-    console.log("🚀 ~ file: layout.component.ts ~ line 25 ~ LayoutComponent ~ scrollTo ~ target", target)
     document.querySelector('#' + target)!.scrollIntoView();
   }
 
