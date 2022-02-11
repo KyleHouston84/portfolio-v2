@@ -8,7 +8,7 @@ import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
   <section id="contact" class="contact sm">
     <!-- <video-load video-source="/assets/video/contact_vid.mp4"></video-load> -->
     <div class="foreground">
-      <h1 class="contact-h1">&lt;Let's Talk! <span class="slash">/</span>&gt;</h1>
+      <h2 class="section-title">&lt;Let's Talk! <span class="slash">/</span>&gt;</h2>
       <div class="contact-me">
         <p class="contact-text">
           Interested in working with me? Say hi, I'll respond ASAP:

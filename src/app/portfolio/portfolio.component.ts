@@ -5,9 +5,9 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <section id="portfolio" class="work">
       <div class="works-container">
-        <h1 class="works-h2">
+        <h2 class="section-title">
           &lt;sample of projects I've worked on <span class="slash">/</span>&gt;
-        </h1>
+        </h2>
         <div class="works">
           <!-- <portfolio-work class="portfolio-screen" ng-repeat="work in $ctrl.works" work="work"></portfolio-work> -->
         </div>

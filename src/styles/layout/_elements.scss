@@ -9,6 +9,13 @@ section {
   }
 }
 
+.section-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+}
+
 a {
   &.button {
     color: $primary-color;

@@ -6,15 +6,16 @@ import TECHNOLOGIES, { Tech } from '../technologies';
   template: `
     <section id="skills" class="skills">
       <div class="techs-container">
-        <h1 class="techs-h2">
+        <h2 class="section-title">
           &lt;technologies I love working with <span class="slash">/</span>&gt;
-        </h1>
+        </h2>
 
         <div class="filter-buttons">
           View:
           <a (click)="filter('all')"   [ngClass]="{'selected': currentView === 'all'}"   class="button">All</a>
           <a (click)="filter('js')"    [ngClass]="{'selected': currentView === 'js'}"    class="button">JS</a>
           <a (click)="filter('css')"   [ngClass]="{'selected': currentView === 'css'}"   class="button">CSS</a>
+          <a (click)="filter('db')"   [ngClass]="{'selected': currentView === 'db'}"   class="button">DB</a>
           <a (click)="filter('other')" [ngClass]="{'selected': currentView === 'other'}" class="button">Other</a>
         </div>
 
