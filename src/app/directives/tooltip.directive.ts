@@ -1,9 +1,9 @@
-import { Directive, Input, ElementRef, HostListener, AfterViewInit } from '@angular/core';
+import { Directive, Input, ElementRef, HostListener, AfterViewInit, OnDestroy } from '@angular/core';
 
 @Directive({
   selector: '[tooltip]'
 })
-export class TooltipDirective implements AfterViewInit {
+export class TooltipDirective implements AfterViewInit, OnDestroy  {
 
   @Input() public tooltip:string = '';
   container: HTMLElement | null = null;
@@ -34,6 +34,10 @@ export class TooltipDirective implements AfterViewInit {
     this.container.className = 'tooltip';
     this.container.innerText = this.tooltip;
     document.body.appendChild(this.container);
+  }
+
+  ngOnDestroy(): void {
+    this.container?.remove();
   }
 
   private show(): void {
