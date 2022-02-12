@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     scrollSpy 
     [spiedTags]="['APP-TITLE', 'ABOUT-ME', 'TECH', 'PORTFOLIO', 'CONTACT-ME']" 
     (sectionChange)="onSectionChange($event)">
-    <header-nav [sectionColorClass]="sectionColorClass" (scrollTo)="scrollTo($event)"></header-nav>
+    <header-nav [currentSection]="currentSection" (scrollTo)="scrollTo($event)"></header-nav>
     <app-title id="intro"></app-title>
     <about-me id="about"></about-me>
     <tech id="skills" [inViewPort]="skillsInView"></tech>
@@ -22,12 +22,6 @@ export class LayoutComponent implements OnInit {
   currentSection: string = 'intro';
   sectionColorClass: string = 'dark-section';
   skillsInView: boolean = false;
-  darkSections: string[] = [
-    'intro',
-    'skills',
-    'contact'
-  ]
-
   constructor() { }
 
   ngOnInit(): void {}
@@ -38,7 +32,6 @@ export class LayoutComponent implements OnInit {
 	onSectionChange(sectionId: string) {
 		this.currentSection = sectionId;
     this.skillsInView = this.currentSection === 'skills';
-    this.sectionColorClass = this.darkSections.includes(this.currentSection) ? 'dark-section' : 'light-section';
 	}
 
   scrollTo(target: string) {

@@ -56,7 +56,7 @@
 
     }
 
-    a {
+    .dot {
       text-decoration: none;
       display: block;
       position: relative;
@@ -115,7 +115,7 @@
         display: none;
       }
     }
-    ul a {
+    ul .dot {
       padding-right: 0;
       &::after {
         display: none;
@@ -178,7 +178,7 @@
 
 .dark-section {
   .main-nav {
-    ul a::after {
+    ul .dot::after {
       border: 2px solid #fff;
     }
   }
@@ -189,122 +189,31 @@
 
 .light-section {
   .main-nav {
-    ul a::after {
+    ul .dot::after {
       border: 2px solid #313131;
     }
   }
 }
 
-.section-intro {
+.header {
   .main-nav {
-    li#nav-intro {
-      span {
-        background: #F40500;
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-
-        &::after {
-          width: 29px;
+    .navigation-menu{
+      li.active {
+        span {
+          background: #F40500;
           opacity: 1;
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+    
+          &::after {
+            width: 29px;
+            opacity: 1;
+          }
         }
-      }
-
-      a::after {
-        border: 2px solid $secondary-color;
-        background: $secondary-color;
-      }
-    }
-  }
-}
-
-.section-about {
-  .main-nav {
-    li#nav-about {
-      span {
-        background: #F40500;
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-
-        &::after {
-          width: 29px;
-          opacity: 1;
+        .dot::after {
+          border: 2px solid $secondary-color;
+          background: $secondary-color;
         }
-      }
-
-      a::after {
-        border: 2px solid $secondary-color;
-        background: $secondary-color;
-      }
-    }
-  }
-}
-
-.section-skills {
-  .main-nav {
-    li#nav-skills {
-      span {
-        background: #F40500;
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-
-        &::after {
-          width: 29px;
-          opacity: 1;
-        }
-      }
-
-      a::after {
-        border: 2px solid $secondary-color;
-        background: $secondary-color;
-      }
-    }
-  }
-}
-
-.section-portfolio {
-  .main-nav {
-    li#nav-portfolio {
-      span {
-        background: #F40500;
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-
-        &::after {
-          width: 29px;
-          opacity: 1;
-        }
-      }
-
-      a::after {
-        border: 2px solid $secondary-color;
-        background: $secondary-color;
-      }
-    }
-  }
-}
-
-.section-contact {
-  .main-nav {
-    li#nav-contact {
-      span {
-        background: #F40500;
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-
-        &::after {
-          width: 29px;
-          opacity: 1;
-        }
-      }
-
-      a::after {
-        border: 2px solid $secondary-color;
-        background: $secondary-color;
       }
     }
   }
