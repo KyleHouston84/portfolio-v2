@@ -9,6 +9,7 @@ import WORKS, { Work } from '../data/work-examples';
         <h2 class="section-title">
           &lt;sample of projects I've worked on <span class="slash">/</span>&gt;
         </h2>
+        
         <div class="works-container">
           <ng-container *ngFor="let sample of workSamples">
             <div class="preview-card" [ngStyle]="{'background-image': 'url('+ sample.screen +')'}">

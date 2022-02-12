@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import TECHNOLOGIES, { Tech } from '../data/technologies';
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'tech',
@@ -31,6 +32,7 @@ import TECHNOLOGIES, { Tech } from '../data/technologies';
               </div>
               <h3 class="tech-h3">
                 {{ tech.title }}
+                <fa-icon [tooltip]="tech.description" style="font-size: 12px; color: yellow;" [icon]="faQuestionCircle"></fa-icon>
               </h3>
             </div>
           </ng-container>
@@ -46,6 +48,7 @@ export class TechComponent implements OnInit {
 
   currentView: string = 'all';
   technologies: Tech[] = [];
+  faQuestionCircle:any = faQuestionCircle;
 
   constructor() {
     this.technologies = [...TECHNOLOGIES];

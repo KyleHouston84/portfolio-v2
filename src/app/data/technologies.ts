@@ -64,14 +64,6 @@ const TECHNOLOGIES = [
     level: 66
   },
   {
-    key: "node",
-    type: "js",
-    title: "Node",
-    logoURL: "/assets/images/icons/nodejs.png",
-    description: "Event-driven I/O server-side JavaScript environment based on V8.",
-    level: 71
-  },
-  {
     key: "scss",
     type: "css",
     title: "Sass",

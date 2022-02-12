@@ -1,8 +1,11 @@
+// Modules
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+// Components
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
@@ -11,11 +14,10 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { TechComponent } from './tech/tech.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
-
-// Vendor
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
-import { ScrollSpyDirective } from './directives';
+
+// Directives
+import { ScrollSpyDirective, TooltipDirective } from './directives';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { ScrollSpyDirective } from './directives';
     PortfolioComponent,
     ContactMeComponent,
     FooterComponent,
-    ScrollSpyDirective
+    ScrollSpyDirective,
+    TooltipDirective
   ],
   imports: [
     BrowserModule,
