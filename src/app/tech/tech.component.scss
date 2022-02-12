@@ -8,7 +8,18 @@ section.skills {
   min-height: 100vh;
   background: $background;
   color: #fff;
-  padding-top: 69px;
+  padding-top: 4.31em;
+  .section-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.techs-container {
+  min-height: calc(100vh - 4.31em);
+  display: flex;
+  align-items: center;
 }
 
 .techs {
@@ -17,11 +28,14 @@ section.skills {
   justify-content: space-around;
   max-width: 1120px;
   max-height: 730px;
-  padding-top: 16px;
+  // padding-top: 8%;
   margin: 0 auto;
 }
 
 .filter-buttons {
+  position: absolute;
+  top: 4.2em;
+  left: 0;
   .button {
     color:#fff;
     margin: 0 5px;

@@ -15,7 +15,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 // Vendor
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
-import { ScrollSpyDirective } from './scroll-spy.directive';
+import { ScrollSpyDirective } from './directives';
 
 @NgModule({
   declarations: [
