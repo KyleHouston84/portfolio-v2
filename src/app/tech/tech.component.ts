@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import TECHNOLOGIES, { Tech } from '../technologies';
+import TECHNOLOGIES, { Tech } from '../data/technologies';
 
 @Component({
   selector: 'tech',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import WORKS, { Work } from '../work-examples';
+import WORKS, { Work } from '../data/work-examples';
 
 @Component({
   selector: 'portfolio',
