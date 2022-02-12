@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import TECHNOLOGIES, { Tech } from '../technologies';
 
 @Component({
   selector: 'tech',
   template: `
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" [ngClass]="{'animate-bars': inViewPort}">
       <div class="techs-container">
         <h2 class="section-title">
           &lt;technologies I love working with <span class="slash">/</span>&gt;
@@ -12,11 +12,11 @@ import TECHNOLOGIES, { Tech } from '../technologies';
 
         <div class="filter-buttons">
           View:
-          <a (click)="filter('all')"   [ngClass]="{'selected': currentView === 'all'}"   class="button">All</a>
-          <a (click)="filter('js')"    [ngClass]="{'selected': currentView === 'js'}"    class="button">JS</a>
-          <a (click)="filter('css')"   [ngClass]="{'selected': currentView === 'css'}"   class="button">CSS</a>
-          <a (click)="filter('db')"   [ngClass]="{'selected': currentView === 'db'}"   class="button">DB</a>
-          <a (click)="filter('other')" [ngClass]="{'selected': currentView === 'other'}" class="button">Other</a>
+          <a (click)="filter('all')"    [ngClass]="{'selected': currentView === 'all'}"   class="button">All</a>
+          <a (click)="filter('js')"     [ngClass]="{'selected': currentView === 'js'}"    class="button">JS</a>
+          <a (click)="filter('css')"    [ngClass]="{'selected': currentView === 'css'}"   class="button">CSS</a>
+          <a (click)="filter('db')"     [ngClass]="{'selected': currentView === 'db'}"    class="button">DB</a>
+          <a (click)="filter('other')"  [ngClass]="{'selected': currentView === 'other'}" class="button">Other</a>
         </div>
 
         <div class="techs">
@@ -41,6 +41,8 @@ import TECHNOLOGIES, { Tech } from '../technologies';
   styleUrls: ['./tech.component.scss']
 })
 export class TechComponent implements OnInit {
+
+  @Input() inViewPort: boolean = false;
 
   currentView: string = 'all';
   technologies: Tech[] = [];

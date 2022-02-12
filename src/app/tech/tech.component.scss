@@ -99,12 +99,11 @@ section.skills {
   transition: all 1s ease 0.6s;
 }
 
-.main-container:not(.section-skills) {
+.skills:not(.animate-bars) {
   .progress-bar {
     transform: rotate(0) !important;
   }
   .progress-label {
-    /* opacity: 0;*/
     transform: rotate(0) !important;
   }
 }
