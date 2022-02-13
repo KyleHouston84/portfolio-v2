@@ -16,13 +16,12 @@ import { Component, OnInit } from '@angular/core';
 
           <p>
             For the last {{experience}} years I have been developing intuitive, performant, powerful  
-            web applications and web sites professionally. Whether I'm developing for my employer or a client I am passionate 
-            about delivering high-quality software throughout the development cycle with the ability to quickly learn a 
-            broad range of skills/technologies to meet requirements.
+            web applications and web sites professionally. I am passionate about delivering high-quality software throughout the development cycle. 
+            Whatever your technology stack comprises of I am able to quickly learn a broad range of skills/technologies to meet requirements.
           </p>
 
-          <p  class="mobile-optional">
-            I truely relish working collaboratively with other developers and designers to make engaging and beautiful web applications.
+          <p>
+            I truely enjoy working collaboratively with other developers and designers to make engaging and beautiful web applications.
             I excel in transforming a design into living web components and interactions, leveraging my creativity to fill the gaps between
             the breakpoints and design additional components following the look and feel of the original design.
           </p>

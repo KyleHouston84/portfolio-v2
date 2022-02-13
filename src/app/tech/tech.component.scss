@@ -12,7 +12,10 @@ section.skills {
   .section-title {
     position: absolute;
     top: 0;
-    left: 1.75em;
+    left: 0;
+  }
+  @media screen and (max-width:780px) {
+    padding-top: 8.5em;
   }
 }
 
