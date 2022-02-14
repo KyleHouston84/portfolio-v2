@@ -25,7 +25,7 @@ import { Component, OnInit } from '@angular/core';
             I excel in transforming a design into living web components and interactions, leveraging my creativity to fill the gaps between
             the breakpoints and design additional components following the look and feel of the original design.
           </p>
-          <a class="button" href="https://drive.google.com/file/d/1pGdFWpIivMHPHubBvdYN_4kf4Uv3x6Z8/view?usp=sharing" target="_blank">Download my resume</a>
+          <a class="button" href="/assets/pdf/Kyle Houston Resume (web) - 2022.pdf" target="_blank">Download my resume</a>
         </div>
       </article>
     </section>`,
