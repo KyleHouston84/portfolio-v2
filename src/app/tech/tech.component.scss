@@ -38,10 +38,17 @@ section.skills {
 .filter-buttons {
   position: absolute;
   top: 4.2em;
-  left: 0;
+  left: 1.5em;
   .button {
     color:#fff;
     margin: 0 5px;
+  }
+  @media screen and (max-width:780px) {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
