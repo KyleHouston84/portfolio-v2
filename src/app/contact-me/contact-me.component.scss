@@ -1,7 +1,8 @@
+@import '../../styles/base/variables';
 
 section.contact {
   background: #0c1219;
-  color: #fff;
+  color: $light-color;
   height: 60vh;
   &::before {
     content: '';
@@ -41,7 +42,7 @@ video.contact-bg {
   flex-direction: column;
   align-items: center;
   a {
-    color: #fff;
+    color: $light-color;
     margin: 0 2vw;
     i {
       transition: all 0.3s ease;

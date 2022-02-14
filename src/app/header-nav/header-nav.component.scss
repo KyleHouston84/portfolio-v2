@@ -15,7 +15,7 @@
 
       span {
         background: $secondary-color;
-        color: #fff;
+        color: $light-color;
         padding: 6px 10px;
         border-radius: 19px;
         opacity: 0;
@@ -179,11 +179,11 @@
 .dark-section {
   .main-nav {
     ul .dot::after {
-      border: 2px solid #fff;
+      border: 2px solid $light-color;
     }
   }
   .spinner-spin > .spinner {
-    background-color: #fff;
+    background-color: $light-color;
   }
 }
 

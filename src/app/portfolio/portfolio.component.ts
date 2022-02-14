@@ -12,7 +12,7 @@ import WORKS, { Work } from '../data/work-examples';
         
         <div class="works-container">
           <ng-container *ngFor="let sample of workSamples">
-            <div class="preview-card" [ngStyle]="{'background-image': 'url('+ sample.screen +')'}">
+            <div class="preview-card" [ngStyle]="{'background-image': 'url('+ sample.screen +')'}" (click)="openModal(sample)">
               <h3 class="title">{{ sample.title }}</h3>
             </div>
           </ng-container>
@@ -28,6 +28,10 @@ export class PortfolioComponent implements OnInit {
 
   constructor() {
     this.workSamples = [...WORKS];
+  }
+
+  openModal(sample: Work) {
+    console.log("🚀 ~ file: portfolio.component.ts ~ line 34 ~ PortfolioComponent ~ openModal ~ sample", sample); 
   }
 
   ngOnInit(): void {

@@ -1,4 +1,7 @@
+@import '../../styles/base/variables';
+
 .footer {
+  background: $light-color;
   min-height: 160px;
   box-sizing: border-box;
   padding: 23px 0;
