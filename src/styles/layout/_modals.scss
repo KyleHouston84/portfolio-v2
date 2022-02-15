@@ -1,0 +1,90 @@
+
+
+.portfolio-modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width:780px) {
+    flex-direction: column;
+  }
+
+  .screenshot {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 auto;
+    border: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+    @media screen and (max-width:540px) {
+      width: 100%;
+      height: 0;
+      padding-bottom: 77%;
+    }
+  }
+
+  .portfolio-title {
+    font-weight: 600;
+  }
+
+  .text-container {
+    margin-left: 41px;
+    max-width: 460px;
+  }
+
+  .links {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 0;
+    color: $primary-color;
+    fa-icon {
+      color: $secondary-color
+    }
+    span {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  .tech-icons {
+    display: flex;
+    font-size: 12px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+
+    @media screen and (max-width:540px) {
+      flex-wrap: wrap;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      &.contain-background {
+        background-size: contain;
+      }
+    }
+
+    .name {
+      margin-top: 5px;
+    }
+  }
+
+  .tech-used {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+

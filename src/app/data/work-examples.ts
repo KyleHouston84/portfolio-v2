@@ -3,53 +3,57 @@ const WORKS = [
     key: "unison",
     title: "Unison",
     screen: "/assets/images/screens/unison.png",
-    description: "An enterprise single page application that gives it's users tools to clean, merge/match, and profile their data either from uploaded files or via connection to external databases.",
+    description: "Unison is an enterprise, large scale, single page application that gives it's users tools to clean, merge/match, and profile their data. Users can either from upload flat files or connect to external database to process their data.",
     technologies: [
       {
         name: "Angular",
-        icon: "/images/icons/react.png"
+        icon: "/assets/images/icons/react.png"
       },
       {
         name: "NodeJS",
-        icon: "/images/icons/nodejs.png"
+        icon: "/assets/images/icons/nodejs.png"
       },
       {
         name: "MongoDB",
-        icon: "/images/icons/mongo.png"
+        icon: "/assets/images/icons/mongo.png"
       },
       {
         name: "Typescript",
-        icon: "/images/icons/typescript.png"
+        icon: "/assets/images/icons/typescript.png"
       },
       {
         name: "Sass",
-        icon: "/images/icons/sass.png"
+        icon: "/assets/images/icons/sass.png"
       },
     ]
   },
   {
     key: "supportDesk",
-    title: "Support Desk",
+    title: "Support Desk App",
     screen: "/assets/images/screens/support-desk.png",
-    description: "A React single page application support ticket application for a IT support team. Allows users to create and login to accounts, make support tickets and send messages to the IT staff. /n Staff can login and modify the ticket, add notes, and close the ticket.",
+    description: "Support Desk is a React single page application support ticket application for a IT support team. Allows users to create and login to accounts, make support tickets and send messages to the IT staff. <br /> <br />Staff can login and modify the ticket, add notes, and close the ticket.",
     url : "https://houstonwebdev-supportdesk-app.herokuapp.com/",
     repo: "https://github.com/KyleHouston84/support-desk",
     technologies: [
       {
         name: "React",
-        icon: "/images/icons/react.png"
+        icon: "/assets/images/icons/react.png"
       },
       {
         name: "NodeJS",
-        icon: "/images/icons/nodejs.png"
+        icon: "/assets/images/icons/nodejs.png"
+      },
+      {
+        name: "express",
+        icon: "/assets/images/icons/express.svg"
       },
       {
         name: "MongoDB",
-        icon: "/images/icons/mongo.png"
+        icon: "/assets/images/icons/mongo.png"
       },
       {
         name: "Redux Toolkit",
-        icon: "/images/icons/redux.png"
+        icon: "/assets/images/icons/redux.png"
       },
 
     ]
@@ -64,11 +68,15 @@ const WORKS = [
     technologies: [
       {
         name: "React",
-        icon: "/images/icons/react.png"
+        icon: "/assets/images/icons/react.png"
+      },
+      {
+        name: "Firebase",
+        icon: "/assets/images/icons/firebase.png"
       },
       {
         name: "Google OAuth",
-        icon: "/images/icons/google.svg"
+        icon: "/assets/images/icons/google.svg"
       },
     ]
   },
@@ -82,11 +90,11 @@ const WORKS = [
     technologies: [
       {
         name: "React",
-        icon: "/images/icons/react.png"
+        icon: "/assets/images/icons/react.png"
       },
       {
         name: "GitHub API",
-        icon: "/images/icons/github.png"
+        icon: "/assets/images/icons/github.png"
       },
     ]
   },
@@ -99,19 +107,19 @@ const WORKS = [
     technologies: [
       {
         name: "SASS",
-        icon: "/images/icons/sass.png"
+        icon: "/assets/images/icons/sass.png"
       },
       {
         name: "Saffire SPARK CMS",
-        icon: "/images/icons/spark.png"
+        icon: "/assets/images/icons/spark.png"
       },
       {
         name: "YouTube API",
-        icon: "/images/icons/youtube.png"
+        icon: "/assets/images/icons/youtube.png"
       },
       {
         name: "Angular",
-        icon: "/images/icons/angular.png"
+        icon: "/assets/images/icons/angular.png"
       },
     ]
   },
@@ -119,32 +127,32 @@ const WORKS = [
     key: "skout",
     title: "SKOUT Backcountry",
     screen: "/assets/images/screens/skout.png",
-    description: "Ecom site for a local organic trail foods company. Built using nodejs, MongoDB, Angular, SASS, bootstrap and integration Moltin API for inventory management.",
+    description: "Ecom site for a local organic trail foods company. Built using Nodejs, MongoDB, Angular, SASS, bootstrap and integration Moltin API for cart, checkout, and inventory management.",
     url : "http://skout-store.herokuapp.com",
     technologies: [
       {
         name: "Angular",
-        icon: "/images/icons/angular.png"
+        icon: "/assets/images/icons/angular.png"
       },
       {
         name: "MongoDB",
-        icon: "/images/icons/mongo.png"
+        icon: "/assets/images/icons/mongo.png"
       },
       {
         name: "express",
-        icon: "/images/icons/express.png"
+        icon: "/assets/images/icons/express.svg"
       },
       {
         name: "Node.js",
-        icon: "/images/icons/node.png"
+        icon: "/assets/images/icons/nodejs.png"
       },
       {
         name: "SASS",
-        icon: "/images/icons/sass.png"
+        icon: "/assets/images/icons/sass.png"
       },
       {
         name: "gulp",
-        icon: "/images/icons/gulp.png"
+        icon: "/assets/images/icons/gulp.webp"
       }
     ]
   },
@@ -152,24 +160,24 @@ const WORKS = [
     key: "canby",
     title: "Canby Rodeo",
     screen: "/assets/images/screens/canby.png",
-    description: "An fair and event center website built on Saffire's SPARK CMS using ASP.net, Angular, JQuery, and SASS.",
+    description: "The Clackamas Country Fair and Rodeo is a week-long event held at the Clackamas County Fairgrounds in the city of Canby in Clackamas County, Oregon.",
     url : "https://www.canbyrodeo.com/",
     technologies: [
       {
+        name: "Angular",
+        icon: "/assets/images/icons/angular.png"
+      },
+      {
         name: "SASS",
-        icon: "/images/icons/sass.png"
+        icon: "/assets/images/icons/sass.png"
       },
       {
         name: "Saffire SPARK CMS",
-        icon: "/images/icons/spark.png"
+        icon: "/assets/images/icons/spark.png"
       },
       {
         name: "JQuery",
-        icon: "/images/icons/jquery.png"
-      },
-      {
-        name: "Angular",
-        icon: "/images/icons/angular.png"
+        icon: "/assets/images/icons/jquery.png"
       }
     ]
   },
@@ -177,28 +185,28 @@ const WORKS = [
     key: "pendletonRoundUp",
     title: "Pendleton Round Up",
     screen: "/assets/images/screens/pendleton.png",
-    description: "An event center in Kent WA, built on Saffire's SPARK CMS using ASP.net, Angular, JQuery, and SASS.",
-    url : "pendleton.png",
+    description: "The Pendleton Round-Up is a major annual rodeo in the northwestern United States, at Pendleton in northeastern Oregon, built on Saffire's SPARK CMS.",
+    url : "https://www.pendletonroundup.com/",
     technologies: [
       {
-        name: "SASS",
-        icon: "/images/icons/sass.png"
+        name: "Angular",
+        icon: "/assets/images/icons/angular.png"
       },
       {
-        name: "bourbon",
-        icon: "/images/icons/bourbon.png"
+        name: "SASS",
+        icon: "/assets/images/icons/sass.png"
       },
       {
         name: "Saffire SPARK CMS",
-        icon: "/images/icons/spark.png"
+        icon: "/assets/images/icons/spark.png"
       },
       {
         name: "Google Maps API",
-        icon: "/images/icons/google-maps.png"
+        icon: "/assets/images/icons/google-maps.png"
       },
       {
         name: "JQuery",
-        icon: "/images/icons/jquery.png"
+        icon: "/assets/images/icons/jquery.png"
       }
     ]
   }

@@ -1,0 +1,49 @@
+kh-modal {
+  display: none;
+
+  .kh-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .kh-modal-body {
+      padding: 20px;
+      background: #fff;
+      position: relative;
+      min-width: 80vw;
+    }
+
+    .kh-modal-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px 15px;
+      cursor: pointer;
+      @media screen and (max-width:540px) {
+        padding: 5px;
+      }
+    }
+  }
+
+  .kh-modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 900;
+  }
+}
+
+body.kh-modal-open {
+  overflow: hidden;
+}

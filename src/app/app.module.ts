@@ -16,6 +16,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { ModalModule } from './modal/index';
+
 // Directives
 import { ScrollSpyDirective, TooltipDirective } from './directives';
 
@@ -37,6 +39,7 @@ import { ScrollSpyDirective, TooltipDirective } from './directives';
     BrowserModule,
     FormsModule,
     FontAwesomeModule,
+    ModalModule,
     AppRoutingModule
   ],
   providers: [],
