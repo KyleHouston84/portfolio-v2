@@ -28,6 +28,32 @@ const WORKS = [
     ]
   },
   {
+    key: "crwnClothing",
+    title: "CRWN Clothing",
+    screen: "/assets/images/screens/crwn-clothing.png",
+    description: "CRWN Clothing is a mock ecom website developed in React and integrating firebase for authentication, Redux for state management, and stripe API for payment processing. The next step in development for this store I will leverage GraphQL for inventory management. (Work in progress)",
+    url : "https://houstonwebdev-crwn-clothing.herokuapp.com/",
+    repo: "https://github.com/KyleHouston84/crwn-clothing",
+    technologies: [
+      {
+        name: "React",
+        icon: "/assets/images/icons/react.png"
+      },
+      {
+        name: "Redux",
+        icon: "/assets/images/icons/redux.png"
+      },
+      {
+        name: "Firebase",
+        icon: "/assets/images/icons/firebase.png"
+      },
+      {
+        name: "Stripe",
+        icon: "/assets/images/icons/stripe.webp"
+      }
+    ]
+  },
+  {
     key: "supportDesk",
     title: "Support Desk App",
     screen: "/assets/images/screens/support-desk.png",
